@@ -35,7 +35,9 @@ var app = {
     timer : function(){
         setInterval(function(){
             var counter = 20;
-            for
+            for(i = 20; i >= 0; i--){
+                
+            }
 
         }, 20000);
 

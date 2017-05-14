@@ -1,4 +1,4 @@
-var counter = 0;
+var counter = 20;
 var correct = 0;
 var incorrect = 0;
 
@@ -30,17 +30,21 @@ var app = {
         correctAnswer : 1,
     },
     startGame : function(){
+        $("#start").on("click", function(){
+            //all methods called here.
+
+        })
 
     },
     timer : function(){
         setInterval(function(){
-            var counter = 20;
-            for(i = 20; i >= 0; i--){
-                
-            }
+            counter --;
 
-        }, 20000);
+        }, 1000);
 
+    },
+    questionDisplay : function(){
+        $("#question").html("<h2>" + this.question + "</h2>");
     },
 
 }
